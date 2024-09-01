@@ -1,6 +1,6 @@
 {% extends 'base/base.html' %}
 
-{% block title %}Delivery List{% endblock title %}
+{% block title %}Yetkazib berish ro'yxati{% endblock title %}
 
 {% block breadcrumbs %}
 <div class="breadcrumbs">
@@ -9,7 +9,7 @@
             <div class="col-sm-4">
                 <div class="page-header float-left">
                     <div class="page-title">
-                        <h1>Dashboard</h1>
+                        <h1>Boshqaruv</h1>
                     </div>
                 </div>
             </div>
@@ -17,9 +17,9 @@
                 <div class="page-header float-right">
                     <div class="page-title">
                         <ol class="breadcrumb text-right">
-                            <li><a href="#">Dashboard</a></li>
-                            <li><a href="#">Delivery</a></li>
-                            <li class="active">List</li>
+                            <li><a href="#">Boshqaruv</a></li>
+                            <li><a href="#">Yetkazib berish</a></li>
+                            <li class="active">Ro'yxat</li>
                         </ol>
                     </div>
                 </div>
@@ -34,7 +34,7 @@
     <div class="col-xl-12">
         <div class="card">
             <div class="card-body">
-                <h4 class="box-title">Delivery List </h4>
+                <h4 class="box-title">Yetkazib berish ro'yxati</h4>
             </div>
             <div class="card-body--">
                 <div class="table-stats order-table ov-h">
@@ -42,9 +42,9 @@
                         <thead>
                             <tr>
                                 <th class="serial">#</th>
-                                <th>Order</th>
-                                <th>Courier Name</th>
-                                <th>Date</th>
+                                <th>Buyurtma</th>
+                                <th>Kuryer nomi</th>
+                                <th>Sana</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -58,15 +58,17 @@
                             </tr>
                             {% endfor %}
                             {% else %}
-                                <tr><td>No Delivery Data</td></tr>
+                            <tr>
+                                <td>Ma'lumotlar mavjud emas</td>
+                            </tr>
                             {% endif %}
                         </tbody>
                     </table>
                 </div> <!-- /.table-stats -->
             </div>
         </div> <!-- /.card -->
-    </div>  <!-- /.col-lg-8 -->
+    </div> <!-- /.col-lg-8 -->
 
-    
+
 </div>
 {% endblock content %}

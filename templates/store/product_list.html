@@ -1,6 +1,6 @@
 {% extends 'base/base.html' %}
 
-{% block title %}Product List{% endblock title %}
+{% block title %}Mahsulotlar ro'yxati{% endblock title %}
 
 {% block breadcrumbs %}
 <div class="breadcrumbs">
@@ -9,7 +9,7 @@
             <div class="col-sm-4">
                 <div class="page-header float-left">
                     <div class="page-title">
-                        <h1>Dashboard</h1>
+                        <h1>Boshqaruv</h1>
                     </div>
                 </div>
             </div>
@@ -17,9 +17,9 @@
                 <div class="page-header float-right">
                     <div class="page-title">
                         <ol class="breadcrumb text-right">
-                            <li><a href="#">Dashboard</a></li>
-                            <li><a href="#">Product</a></li>
-                            <li class="active">List</li>
+                            <li><a href="#">Boshqaruv</a></li>
+                            <li><a href="#">Mahsulot</a></li>
+                            <li class="active">Ro'yxat</li>
                         </ol>
                     </div>
                 </div>
@@ -34,7 +34,7 @@
     <div class="col-xl-12">
         <div class="card">
             <div class="card-body">
-                <h4 class="box-title">Product List </h4>
+                <h4 class="box-title">Mahsulotlar ro'yxati </h4>
             </div>
             <div class="card-body--">
                 <div class="table-stats order-table ov-h">
@@ -42,9 +42,9 @@
                         <thead>
                             <tr>
                                 <th class="serial">#</th>
-                                <th>Name</th>
-                                <th>Sort No</th>
-                                <th>Date</th>
+                                <th>Nomi</th>
+                                <th>Tartib raqam</th>
+                                <th>Sana</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -58,15 +58,17 @@
                             </tr>
                             {% endfor %}
                             {% else %}
-                                <tr><td>No Product Data</td></tr>
+                            <tr>
+                                <td>Ma'lumot yo'q</td>
+                            </tr>
                             {% endif %}
                         </tbody>
                     </table>
                 </div> <!-- /.table-stats -->
             </div>
         </div> <!-- /.card -->
-    </div>  <!-- /.col-lg-8 -->
+    </div> <!-- /.col-lg-8 -->
 
-    
+
 </div>
 {% endblock content %}
